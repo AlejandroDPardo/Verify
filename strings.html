@@ -1,0 +1,47 @@
+<!--  
+    Author: Alejandro Altuve
+    Assignment: User Input Validation 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Input Validation</title>
+    
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+    <!-- Main container for the form -->
+    <div class="container">
+        <h1>Begin Validation</h1>
+
+        <!-- Input form for first name, last name, and zip code -->
+        <form id="userForm">
+            <!-- Input for First Name -->
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <!-- Input for Last Name -->
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <!-- Input for Zip Code -->
+            <label for="zipCode">Zip Code:</label>
+            <input type="text" id="zipCode" name="zipCode" required>
+
+            <!-- Button to submit and check inputs -->
+            <button type="button" onclick="validateInputs()">Submit</button>
+        </form>
+
+        <!-- Result area for showing secret message or validation results -->
+        <div class="result" id="result"></div>
+
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
